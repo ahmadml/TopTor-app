@@ -9,6 +9,9 @@ app.use(express.json());
 app.use('/availability', require('./routes/availability'));
 app.use('/appointments', require('./routes/appointments'));
 app.use('/vacations', require('./routes/vacations'));
+app.use('/clients', require('./routes/clients'));
+app.use('/employees', require('./routes/employees'));
+
 
 
 sequelize.sync()
